@@ -69,7 +69,7 @@ export default function Courses() {
                     {category.name === 'Drama' && 'Acting, Musical Theatre, Performance'}
                   </p>
                   <Button variant="outline" asChild>
-                    <Link to={`/courses#${category.name.toLowerCase()}`}>View {category.name} Courses</Link>
+                    <Link to="/courses">View {category.name} Courses</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -88,7 +88,7 @@ export default function Courses() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {courses.map((course) => (
-              <Card key={course.id} className="overflow-hidden hover:shadow-lg transition-shadow" id={`${course.category.toLowerCase()}-${course.id}`}>
+              <Card key={course.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${course.image})` }}></div>
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-3">

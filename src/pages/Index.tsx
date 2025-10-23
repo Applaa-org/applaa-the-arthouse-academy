@@ -159,7 +159,7 @@ export default function Index() {
                   <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
                   <p className="text-gray-600 mb-4">{course.description}</p>
                   <Button variant="outline" className="w-full" asChild>
-                    <Link to={`/courses#${course.id}`}>Learn More</Link>
+                    <Link to="/courses">Learn More</Link>
                   </Button>
                 </CardContent>
               </Card>
